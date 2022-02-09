@@ -89,13 +89,13 @@ def detect_fruits(img_path: str) -> Dict[str, int]:
     apple = circles_count - orange
 
     # debug messages and visualization of detected fruits
-    """"
+
     cv2.namedWindow('Window')
     print("banana: ", banana, "apple: ", apple, " oranges: ", orange, " circles: ", circles_count)
     cv2.imshow('Window', img_copy)
     key_code = cv2.waitKey(100)
     input("Press Enter to continue...")
-    """""
+
 
     return {'apple': apple, 'banana': banana, 'orange': orange}
 
